@@ -1,1 +1,106 @@
-<!doctype html> <html lang="en"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width,initial-scale=1" /> <title>Enrique Oforte</title> </head> <body> <h1>Hi there!</h1> <p>Welcome to my website.</p> </body> </html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gibson Lab — Enrique Oforte (clone)</title>
+    <style>
+      /* Simple stylesheet inspired by gibsonlab.org for a clean lab-style homepage */
+      :root{--accent:#0b3b5a;--muted:#6b7280;--bg:#f7fafc;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+      html,body{height:100%;margin:0;background:var(--bg);color:#111}
+      .wrap{max-width:1000px;margin:0 auto;padding:28px}
+      header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+      .brand{display:flex;align-items:center;gap:12px}
+      .logo{width:56px;height:56px;border-radius:6px;background:linear-gradient(135deg,var(--accent),#2b6b99);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+      nav a{color:var(--accent);text-decoration:none;margin-left:18px;font-weight:600}
+      .hero{background:#fff;border-radius:12px;padding:36px;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;gap:28px;align-items:center}
+      .hero .left{flex:1}
+      .hero h1{margin:0;font-size:32px;color:var(--accent)}
+      .lead{color:var(--muted);margin-top:8px}
+      .cta{margin-top:18px}
+      .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+      .right{width:220px;background:linear-gradient(180deg,#f0f9ff,#ffffff);border-radius:10px;padding:12px}
+      .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+      .card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 4px 12px rgba(15,23,42,0.04)}
+      .card h3{margin:0 0 8px 0;color:var(--accent);font-size:18px}
+      footer{margin-top:28px;color:var(--muted);font-size:14px;padding:18px 0}
+      @media (max-width:720px){.hero{flex-direction:column}.right{width:100%}.grid{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="logo">EO</div>
+          <div>
+            <div style="font-weight:800;color:#0f1724">Enrique Oforte</div>
+            <div style="font-size:13px;color:var(--muted)">Gibson lab — style homepage</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#people">People</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="left">
+            <h1>Computational biology &amp; genomics</h1>
+            <p class="lead">We study how genomes and cells work by building computational tools and running experiments. This is a simple layout inspired by gibsonlab.org to get your site looking similar quickly.</p>
+            <div class="cta">
+              <a class="btn" href="#research">Our research</a>
+              <a style="margin-left:12px;color:var(--accent);font-weight:600;text-decoration:none" href="#people">Meet the team</a>
+            </div>
+          </div>
+          <aside class="right">
+            <strong style="display:block;margin-bottom:8px;color:var(--accent)">News</strong>
+            <div style="font-size:14px;color:var(--muted)">No news yet — add announcements here. Example: "New preprint released" or "Join our lab".</div>
+          </aside>
+        </section>
+
+        <section class="grid" style="margin-top:20px">
+          <div class="card">
+            <h3 id="research">Research</h3>
+            <p style="color:var(--muted);margin:0">Short bullet points about the lab's main research themes:</p>
+            <ul style="margin-top:8px;color:#111">
+              <li>Genomics &amp; variant interpretation</li>
+              <li>Single-cell analysis and lineage tracing</li>
+              <li>Open-source computational tools</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 id="people">People</h3>
+            <p style="color:var(--muted);margin:0">Principal Investigator<br><strong>Enrique Oforte</strong></p>
+            <p style="margin-top:10px;color:var(--muted);font-size:14px">Include photos and short bios — replace this text with real team members.</p>
+          </div>
+        </section>
+
+        <section style="margin-top:18px">
+          <div class="card">
+            <h3 id="about">About</h3>
+            <p style="color:var(--muted)">This is a small static site built with plain HTML/CSS. To make the site more like gibsonlab.org we can add custom colors, fonts, logos, and additional pages (publications, software, people, join us).</p>
+          </div>
+        </section>
+
+        <section style="margin-top:18px">
+          <div class="card">
+            <h3 id="contact">Contact</h3>
+            <p style="color:var(--muted);margin:0">Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © <span id="year"></span> Enrique Oforte — Built as a GitHub Pages site
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
