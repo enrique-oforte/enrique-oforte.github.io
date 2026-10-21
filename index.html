@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Enrique Ortega-Forte, PhD</title>
     <style>
-      :root{
+      :root {
         --accent:#33758B;
         --accent-2:#AA2B75;
         --muted:#A4A8AA;
@@ -15,27 +15,82 @@
         --shadow:0 12px 28px rgba(17,24,39,0.06);
       }
 
-      *{box-sizing:border-box}
-      html,body{height:100%;margin:0;background:var(--bg);color:#111;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
-      body{display:flex;justify-content:center;align-items:flex-start}
-      .wrap{width:min(760px,calc(100% - 32px));margin:6vh auto;padding:28px}
+      * { box-sizing:border-box; }
+      html, body {
+        height:100%;
+        margin:0;
+        background:var(--bg);
+        color:#111;
+        font-family:Inter,system-ui,Arial,Helvetica,sans-serif;
+      }
 
-      header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-      .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2b6b99);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:var(--shadow)}
-      .name{font-weight:800;color:var(--accent-2);font-size:1.1rem;letter-spacing:0.01em}
+      body {
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+      }
 
-      h1{margin:0 0 12px 0;font-size:clamp(2rem,2.2vw,2.8rem);color:var(--accent)}
-      h2{margin:26px 0 14px 0;font-size:1.1rem;color:#222;letter-spacing:0.02em}
-      p{margin:0 0 12px 0;color:#4f5a60;line-height:1.7;font-size:1rem}
+      .wrap {
+        width:min(760px, calc(100% - 32px));
+        margin:6vh auto;
+        padding:28px;
+      }
 
-      .section-list{
+      header {
+        display:flex;
+        align-items:center;
+        gap:14px;
+        margin-bottom:18px;
+      }
+
+      .logo {
+        width:56px;
+        height:56px;
+        border-radius:12px;
+        background:linear-gradient(135deg,var(--accent),#2b6b99);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#fff;
+        font-weight:700;
+        box-shadow:var(--shadow);
+      }
+
+      .name {
+        font-weight:800;
+        color:var(--accent-2);
+        font-size:1.1rem;
+        letter-spacing:0.01em;
+      }
+
+      h1 {
+        margin:0 0 12px 0;
+        font-size:clamp(2rem, 2.2vw, 2.8rem);
+        color:var(--accent);
+      }
+
+      h2 {
+        margin:26px 0 14px 0;
+        font-size:1.1rem;
+        color:#222;
+        letter-spacing:0.02em;
+      }
+
+      p {
+        margin:0 0 12px 0;
+        color:#4f5a60;
+        line-height:1.7;
+        font-size:1rem;
+      }
+
+      .section-list {
         display:grid;
-        grid-template-columns:repeat(2,minmax(0,1fr));
+        grid-template-columns:repeat(2, minmax(0, 1fr));
         gap:16px;
         margin-top:18px;
       }
 
-      .section-link{
+      .section-link {
         display:flex;
         align-items:center;
         gap:14px;
@@ -51,14 +106,14 @@
         transition:transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
       }
 
-      .section-link:hover{
+      .section-link:hover {
         border-color:var(--accent);
         background:#f6fbfd;
         transform:translateY(-2px);
         box-shadow:0 10px 24px rgba(51,117,139,0.08);
       }
 
-      .icon{
+      .icon {
         width:44px;
         height:44px;
         border-radius:12px;
@@ -71,16 +126,35 @@
         flex-shrink:0;
       }
 
-      .card-text{display:flex;flex-direction:column;gap:4px}
-      .card-title{color:#1c2c33;font-size:1rem}
-      .card-meta{font-size:0.74rem;font-weight:600;color:var(--muted);letter-spacing:0.02em;text-transform:lowercase}
+      .card-text {
+        display:flex;
+        flex-direction:column;
+        gap:4px;
+      }
 
-      footer{margin-top:32px;color:var(--muted);font-size:13px}
+      .card-title {
+        color:#1c2c33;
+        font-size:1rem;
+      }
 
-      @media (max-width:620px){
-        .wrap{padding:20px 18px;margin:4vh auto}
-        .section-list{grid-template-columns:1fr}
-        .name{font-size:1rem}
+      .card-meta {
+        font-size:0.74rem;
+        font-weight:600;
+        color:var(--muted);
+        letter-spacing:0.02em;
+        text-transform:lowercase;
+      }
+
+      footer {
+        margin-top:32px;
+        color:var(--muted);
+        font-size:13px;
+      }
+
+      @media (max-width:620px) {
+        .wrap { padding:20px 18px; margin:4vh auto; }
+        .section-list { grid-template-columns:1fr; }
+        .name { font-size:1rem; }
       }
     </style>
   </head>
@@ -97,9 +171,10 @@
         <p>I am a chemical biologist exploring cell processes with chemical tools for therapeutic discovery.</p>
 
         <h2>Knowledge Base</h2>
+
         <div class="section-list">
           <a class="section-link" href="https://enrique-oforte.github.io/">
-            <div class="icon">💻</div>
+            <div class="icon">🖧</div>
             <div class="card-text">
               <span class="card-title">Computational</span>
               <span class="card-meta">software, pipeline and analyses</span>
@@ -107,7 +182,7 @@
           </a>
 
           <a class="section-link" href="https://enrique-oforte.github.io/">
-            <div class="icon">🧪</div>
+            <div class="icon">⚛</div>
             <div class="card-text">
               <span class="card-title">Chemistry</span>
               <span class="card-meta">tool compounds, probes and screens</span>
@@ -115,7 +190,7 @@
           </a>
 
           <a class="section-link" href="https://enrique-oforte.github.io/">
-            <div class="icon">🧫</div>
+            <div class="icon">☣</div>
             <div class="card-text">
               <span class="card-title">Biology</span>
               <span class="card-meta">cell-based screens, assay development</span>
@@ -123,10 +198,17 @@
           </a>
 
           <a class="section-link" href="https://enrique-oforte.github.io/">
-            <div class="icon">⚙️</div>
+            <div class="icon">🖨</div>
             <div class="card-text">
               <span class="card-title">Instruments</span>
               <span class="card-meta">equipments, methods and development</span>
+            </div>
+          </a>
+
+          <a class="section-link" href="https://orcid.org/0000-0001-8812-4806/">
+            <div class="icon">🕮</div>
+            <div class="card-text">
+              <span class="card-title">Publications</span>
             </div>
           </a>
         </div>
@@ -137,6 +219,8 @@
       </footer>
     </div>
 
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
