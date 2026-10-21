@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Enrique Ortega-Forte, PhD</title>
     <style>
-      :root{--accent:#33758B;--muted:#A4A8AA;--bg:#fbfcfd}
+      :root{--accent:#33758B;--muted:#A4A8AA;--bg:#fbfcfd;--card:#ffffff;--border:#e7edf1}
       html,body{height:100%;margin:0;background:var(--bg);color:#111;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
       .wrap{max-width:720px;margin:6vh auto;padding:28px}
       header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
       .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#2b6b99);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
       h1{margin:0 0 12px 0;font-size:28px;color:var(--accent)}
+      h2{margin:22px 0 12px 0;font-size:18px;color:#222}
       p{margin:0 0 12px 0;color:var(--muted);line-height:1.6}
-      .btn{display:inline-block;margin-top:8px;padding:10px 14px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+      .section-list{display:grid;gap:12px;margin-top:18px}
+      .section-link{display:block;padding:14px 16px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--accent);text-decoration:none;font-weight:700;line-height:1.4}
+      .section-link:hover{border-color:var(--accent);background:#f5fafb}
       footer{margin-top:28px;color:var(--muted);font-size:13px}
       @media (max-width:520px){.wrap{padding:20px;margin:4vh auto}h1{font-size:22px}}
     </style>
@@ -23,7 +26,7 @@
         <div class="logo">EOF</div>
         <div>
           <div style="font-weight:800;color:#AA2B75">Enrique Ortega-Forte, PhD</div>
-          </div>
+        </div>
       </header>
 
       <main>
@@ -31,9 +34,15 @@
         <p>Welcome to Enrique's website.</p>
         <p>I am a chemical biologist exploring cell processes with chemical tools for therapeutic discovery.</p>
 
-        <p>
-          <a class="btn" href="https://orcid.org/0000-0001-8812-4806" target="_blank" rel="noopener noreferrer">Publications</a>
-        </p>
+        <h2>What's Here</h2>
+        <div class="section-list">
+          <a class="section-link" href="https://enrique-oforte.github.io/">Computational methods</a>
+          <a class="section-link" href="https://enrique-oforte.github.io/">Chemistry protocols</a>
+          <a class="section-link" href="https://enrique-oforte.github.io/">Assays</a>
+          <a class="section-link" href="https://enrique-oforte.github.io/">Instruments</a>
+          <a class="section-link" href="https://enrique-oforte.github.io/">Software</a>
+          <a class="section-link" href="https://enrique-oforte.github.io/">Institutional knowledge</a>
+        </div>
       </main>
 
       <footer>
